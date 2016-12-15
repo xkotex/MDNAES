@@ -1,0 +1,10 @@
+//    name     mass      charge       sigma, nm  epsilon, kJ/mol
+#atom Ar      39.94        0.00   LJ     0.3405           0.998;
+
+#rigid_molecule Ar 1
+   #site Ar   0      0      0;
+
+   #mainVect  0;
+   #cationCoordinationCenter 1;
+   #anionCoordinationCenter  1;
+;

@@ -1,0 +1,134 @@
+================== FINT.DAT for version 2.13.0 ===========================
+
+*  Number of steps for this run            NSTRUN=     #     50000
+*  Number of solvent molecules             NMOL1=      #     864
+*  Number of solvent molecules             NMOL2=      #     0
+
+*  Number of kation                        NION_K=     #     0
+*  Number of anion                         NION_A=     #     0
+*  Insert kation(s)                        NumInsKat   #     0
+*  Insert anion(s)                         NumInsAn    #     0
+
+*  Key of system multiplication
+   0 - None, 2 - NMOL2 *= 8,
+   3 - NMOL2 *= 27                         KDBL=       #     0
+
+*  Interval of energy printing             SPRNT=      #     1000
+*  interval of interm. file writing        SWRIT=      #     1000
+*  Restart from saved configuration        KRS=        #     0
+*  Key of save and read statistics         KStat       #     0
+*  Cut-off radius                          RCUT_LJ, nm #     1.23
+*  Electrostatic method
+    0 - none
+    1 - Shifted force
+    2 - Reaction field                     KCoul       #     0
+    3 - Reaction field for ionic solution
+*  Type of simulation:
+    0 - NVE, 1 - NVT, 2 - NPT              KSV=        #     2
+*  Thermostat parameter (used if KSV!=0)   taw, ps     #     0.1
+*  Barostat parameter   (used if KSV==2)  tawP, ps*atm #  1000.0
+*  Dielectric constant of solvent          Eps         #     1.0
+*  Temperature of thermal bath             TMPR0, K    #     _TMPR_
+*  External pressure                    extPRES, atm   #     1.0
+*  Time step                               DELT, ps    #     0.0025
+*  Density of system                       DENS,kg/m3  #     1400.
+*  External electric field strength, V/m  External_Field #    0.0
+*  Screen output mode : 0 - static  text
+                        1 - dynamic text   KScrOut     #     0
+*  Key for output testing information      KCoorOut    #     0
+
+=========================== Calculation of properties =====================
+*  Key of restore configuration            KLH=         #     0
+
+*  Key of "structure" properties           KSTR         #     1
+*  Key of RDF                              KRDF       #     1
+*  Interval of DF calculation              StepRDF    #     10
+*  Step for DF histograms                  DELTR, nm  #     0.002
+*  Calculate ions coordination numbers     KCoorNum   #     0
+*  Calculate molecular orientation as f(r) KMolOr     #     0
+*  Calculate orientation of molecules
+   around ions                             KDSOR      #     0
+*  Calculate 3d distributions
+   for ion(s)                              KDSHL      #     0
+*  Deltar for 3d distributions        StepRInShl, nm  #     0.02
+
+
+*  Calculate dynamical properties           KCF=        #     0
+*  Calculate Legendre polinomials           KLegendre   #     1
+
+*  Calculate short CF for molecules      KShortMolCF    #     1
+*  Velocity ACF                           KMol_Cvv    #     1
+*  Angle velocity ACF                     KMol_Cww    #     0
+*  Force ACF                              KMol_Cff    #     0
+*  Torque ACF                             KMol_Cnn    #     0
+*  Short-ranged & Long-ranged forces CFs  KMol_Cfc    #     0
+*  Angle momentum ACF                     KMol_Cll    #     0
+*  Angle velocity in molecular axes ACF   KMol_Cwc    #     0
+*  Cross CF <V(0)W(t)>                    KMol_Cvw    #     0
+                                          KMol_WcWc   #     0
+                                          KMol_VcVc   #     0
+                                          KMol_VcWc   #     0
+
+*  Calculate long CF for molecules       KLongMolCF     #     0
+*  Dipole momentum ACF                    KDipMom     #     0
+*  Main vector ACF                        KMainVect   #     0
+*  Dipole momentum of the cell ACF        KDipBox     #     0
+*  Molecular axes ACFs                    KMol_Axes   #     0
+*  Mean displacements                     KMol_RCM    #     1
+
+*  Calculate short CF for ions           KShortIonCF    #     0
+*  Velocity ACF                           KIon_Cvv    #     1
+*  Angle velocity ACF                     KIon_Cww    #     0
+*  Force ACF                              KIon_Cff    #     0
+*  Torque ACF                             KIon_Cnn    #     0
+*  Short-ranged & Long-ranged forces CFs  KIon_Cfc    #     0
+*  Angle momentum ACF                     KIon_Cll    #     0
+*  Angle velocity in molecular axes ACF   KIon_Cwc    #     0
+*  Cross CF <V(0)W(t)>                    KIon_Cvw    #     0
+                                          KIon_WcWc   #     0
+                                          KIon_VcVc   #     0
+                                          KIon_VcWc   #     0
+
+*  Calculate long CF for ions            KLongIonCF     #     0
+*  Molecular axes ACFs                    KIon_Axes   #     0
+*  Mean displacements                     KIon_RCM    #     1
+
+*  Calculate time life molecules shell     KTimeLife   #     0
+                                         TimeLifeTSize #  1001
+                                         TimeLifeMult  #    10
+*  Calculate shear viscosity               KSVisc      #     0
+                                        SViscTSize     #  5001
+                                        SViscMulT      #     5
+*  Electrical conductivity                 KConduct    #     0
+                                        ConductTSize   #  4001
+                                        ConductMult    #     5
+*  Calculate van Hove functions G(r,t)     KSTCF       #     0
+*  size of t-dimension for G(r,t)          STCF_TSIZE  #     1
+*  time multilplicator for G(r,t)          StepSTCF    #     20
+*  step in r-dimension for G(r,t), nm      STCF_DELTR  #     0.002
+*  output format for G(r,t): 0 - print separate files
+   for each atoms pair,      1 - print to single file  #     1
+*  Calculate incoherent F(k,t) function    KFktInc     #     0
+*  time multilplicator for F(k,t) inc.    StepFktInc   #     10
+*  size of t-dimension for F(k,t) inc.    FktInc_TSIZE #     1001
+*  size of k-dimension for F(k,t) inc.    FktInc_KSIZE #     8
+*  k values for F(k,t) inc., nm^-1        k_array_inc  # 1.0 2.0 3.0 4.0 5.0 7.0 10.0 15.0 
+
+*  Interval for short CF calculation       StepShortCF #     5
+*  ------------ long  CF ----------        StepLongCF  #     10
+*  Maximal size of CF gistogram            CorrelSize  #     1001
+
+
+======= It is recommended to calculate all radii from RDF ========
+
+*  Radius of cation's FSS for molecules 1  RSHL[0], nm #     0.723
+*  Radius of cation's SSS for molecules 1  RSHL[1], nm #     0.991
+*  Radius of  anion's FSS for molecules 1  RSHL[2], nm #     0.58
+*  Radius of  anion's SSS for molecules 1  RSHL[3], nm #     1.02
+
+*  Maximal distance in contact ion pair    RSHL[4], nm #     0.45
+
+*  Radius of cation's FSS for molecules 2  RSHL[5], nm #     0.723
+*  Radius of cation's SSS for molecules 2  RSHL[6], nm #     0.991
+*  Radius of  anion's FSS for molecules 2  RSHL[7], nm #     0.58
+*  Radius of  anion's SSS for molecules 2  RSHL[8], nm #     1.02
